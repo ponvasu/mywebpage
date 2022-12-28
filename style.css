@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.youtube-button{
+  font-size: 25px;
+    display: flex;
+    padding: 20px;
+    color: #fff;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #cc181e;
+    
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+i{
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+p{
+    font-size: 25pxpx;
+}
+
+span{
+    margin-right: 7px;
+}
+
+.YouTube{
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  color:white;
+  background-color: #cc181e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video{
+  display: flex;
+  font-size: 25px;
+  padding: 20px;
+  color: #fff;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #cc181e;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+.views{
+  font-size: 25px;
+  display: flex;
+  padding: 20px;
+  color: #fff;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #cc181e;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+span{
+  margin-right: 7px;
+}
+
+.Name{
+    padding: 10px;
+    background-color: red;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.slider{
+    width: 2000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 2000px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #cc181e;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #cc181e;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #cc181e;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #cc181e;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #cc181e;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #cc181e;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #cc181e;
+  }
